@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Indie+Flower&display=swap');
+
+
+body{
+    padding-top: 0;
+}
+
+.container {
+    max-width: 960px;
+  }
+
+/*------------------------------
+ *        Construction
+ *------------------------------
+ */
+
+  .fond-transparent{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9)),url('../img/fond-transparent.png');
+    background-position: 99% 100%;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.construction{
+    min-height: 50rem;
+    padding-top: 10rem;
+}
+
+/*------------------------------
+ * Custom translucent site header
+ *------------------------------
+ */
+
+ .site-header {
+    padding-top: 0!important;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+  }
+
+  .site-header-navbar{
+    background-color: rgba(255,255,255,0.9);
+    backdrop-filter: blur(5px);
+    border-bottom: solid 1px #eeeeee;
+    
+  }
+
+  .site-header a {
+    color: #4c4e4c;
+    transition: color .15s ease-in-out;
+    letter-spacing: 1px;
+    border-bottom: solid 4px transparent;
+    padding: 0 1.2rem;
+    margin: 1rem;
+  }
+
+  .site-header a:hover {
+    border-bottom: solid 4px #b7cb4d;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  .diascorn{
+      color: #b7cb4d!important;
+      font-size: 2rem;
+  }
+
+/*-------------------
+ * Custom carousel
+ *-------------------
+ */
+
+ .carousel-shadow{
+     text-shadow:1px 1px 1px black;
+ }
+
+ .carousel-btn{
+     background-color: #e1dd76;
+     color: white;
+ }
+
+/*-----------------
+ * First-section
+ *-----------------
+ */
+
+.first-section{
+    margin: 6rem auto;
+}
+
+.first-section-title{
+    text-transform: uppercase;
+    padding: 3rem;
+    font-family: 'Caveat', cursive, sans-serif;
+    color: #786a66;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.first-section-paragraph{
+    text-align: left;
+    letter-spacing: 3px;
+    line-height: 32px;
+}
+
+.style-point{
+    color: #b7cb4d;
+    font-size: 3rem;
+    margin: auto;
+}
+
+/*-----------------
+ * Second-section
+ *-----------------
+ */
+
+.second-section{
+    background:linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.2)), url(../img/fond-footer.jpg);
+    margin: 5rem auto;
+}
+
+.second-section-title{
+    color: white;
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 3.5rem;
+    padding: 4rem;
+    line-height: 5rem;
+}
+
+/*-----------------
+ * Third-section
+ *-----------------
+ */
+
+.third-section-svg{
+    padding-bottom: 2rem;
+    height: 6rem;
+    color: #e1dd76;
+}
+
+.qualiter{
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+/*-----------------
+ * Fourth-section
+ *-----------------
+ */
+
+.fourth-section-title{
+    color: #b7cb4d;
+    font-family: 'Caveat', cursive, sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+.fourth-section-subtitle{
+    color: #786a66;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+}
+
+
+/*----------------
+ * Custom footer
+ *----------------
+ */
+
+ .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.footer-logo{
+    height: 2rem;
+}
+
+.footer-img{
+    height: 10vw;
+}
+
+.footer-back-to-top{
+    position: absolute;
+    height: 3rem;
+    background-color: white;
+    bottom: -1.6rem;
+}
+
+.back-to-top{
+    border-bottom: solid 2px #eeeeee ;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footer-back-to-top:hover{
+    box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: #b7cb4d;
+}
+
+.footer-mail{
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-mail:hover{
+    color: #786a66;
+}
+
+.style-mail{
+    color: #b7cb4d;
+    font-size: 1.2rem;
+    border: solid 1px ;
+}
+
+.footer-mentions{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-mentions:hover{
+    color: #786a66;
+}
+
+/*----------------
+ * @ Media
+ *----------------
+ */
+
+@media (max-width: 1100px){
+
+    
+}
+
+@media (max-width: 800px){
+
+
+}
+
+@media (max-width: 770px){
+
+    .footer-img{
+        display: none;
+        }
+    }
+
+
+
+
+
+
+
+
