@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block carousel %}{% endblock %}
+{% block content %}
+
+    <div class="container jumbotron text-center text-white" style="background: url({{asset('assets/img/fond-footer2.jpg')}})">
+        <h1>Oups !</h1>
+        <p>
+            La page que vous recherchez semble introuvable.
+        </p>
+        <a class="style-button" href="{{ path('home') }}">
+            <button class="btn btn-lg btn-primary style-button mt-4">Retour à la page d'accueil</button>
+        </a>
+        
+    </div>
+
+{% endblock %}

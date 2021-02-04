@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Diascorn Robert - Réalisations{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+        {% for realisation in realisations %}
+            <div class="col-md-4 mb-4">
+                <article class="realisations bg-white rounded shadow">
+                    <div class="mw-100 rounded-top overflow-hidden">
+                        <a href="{{ asset('uploads/' ~ realisation.image) }}">
+                            <img src="{{ asset('uploads/' ~ realisation.image) | imagine_filter('squared_thumbnail_medium') }}" alt="Galerie photos des différentes réalisations" class="w-100">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+

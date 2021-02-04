@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script&family=Indie+Flower&display=swap');
 
 
@@ -19,7 +18,7 @@ body{
   .fond-transparent{
     background-image: linear-gradient(rgba(255, 255, 255, 0.9),
     rgba(255, 255, 255, 0.9)),url('../img/fond-transparent.png');
-    background-position: 99% 100%;
+    background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 30%;
 }
@@ -44,6 +43,7 @@ body{
     background-color: rgba(255,255,255,0.9);
     backdrop-filter: blur(5px);
     border-bottom: solid 1px #eeeeee;
+    font-family: 'Big Shoulders Display', cursive;
     
   }
 
@@ -165,6 +165,38 @@ body{
     font-size: 1rem;
 }
 
+/*----------------
+ * Realisations
+ *----------------
+ */
+
+ .realisations img{
+    transition: transform 1s ease-out;
+    filter: opacity(100%);
+    -webkit-filter: opacity(100%);
+ }
+
+ .realisations img:hover{
+     transform: scale(1.075);
+     filter: opacity(50%);
+    -webkit-filter: opacity(50%);
+ }
+
+/*----------------
+ * Login
+ *----------------
+ */
+
+ .style-button{
+     background-color: #b7cb4d;
+     border-color: #b7cb4d;
+ }
+
+ .style-button:hover{
+    background-color: #786a66;
+    border-color: #786a66;
+}
+
 
 /*----------------
  * Custom footer
@@ -231,6 +263,19 @@ body{
     color: #786a66;
 }
 
+/*-------------------
+ * @ Mentions légales
+ *-------------------
+ */
+
+ .title-color{
+     color: #b7cb4d;
+ }
+
+ .subtitle-color{
+     color: #786a66;
+ }
+
 /*----------------
  * @ Media
  *----------------
@@ -238,7 +283,10 @@ body{
 
 @media (max-width: 1100px){
 
-    
+    .fond-transparent{
+        background-size: 50%;
+    }
+
 }
 
 @media (max-width: 800px){
@@ -253,7 +301,13 @@ body{
         }
     }
 
+    @media (max-width: 500px){
 
+        .fond-transparent{
+            background-size: 150%;
+        }
+    
+    }
 
 
 
